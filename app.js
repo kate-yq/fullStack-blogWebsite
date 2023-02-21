@@ -25,6 +25,10 @@ app.get("/", function(req, res){
   });
 });
 
+app.post("/", function(req, res){
+  res.redirect("/compose");
+});
+
 app.get("/about", function(req, res){
   res.render("about", {aboutContent: aboutContent});
 });

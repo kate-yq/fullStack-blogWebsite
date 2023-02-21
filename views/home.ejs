@@ -9,7 +9,7 @@
         <p><%= post.body.substring(0,100) + " ..." %></p>
         <a href="/posts/<%= post.title %>">Read More</a>
     <% }); %>
-    <div class="post-btn">
-        <button class="btn btn-lg btn-primary" onclick="window.location='/compose'">New Blog</button>
-    </div>
+    <form class="post-btn" action="/" method="post">
+        <button type="submit" class="btn btn-lg btn-primary"  type="button">New Blog</button>
+    </form>
 <%- include('partials/footer') -%>
